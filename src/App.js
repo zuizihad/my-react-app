@@ -3,13 +3,12 @@ import logo from './logo.svg';
 import './App.css';
 import Welcome from './components/Welcome';
 import FormClass from './components/FormClass';
+import Form from './components/Form'
 
 function App() {
   return (
     <div className="App">
-       <Welcome age="22" name="zihad"></Welcome>
-
-       <FormClass name="class 1"></FormClass>
+      <Form></Form>
     </div>
   );
 }
