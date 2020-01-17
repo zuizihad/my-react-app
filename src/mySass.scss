@@ -1,0 +1,9 @@
+$stringColor: red;
+$backColor: green;
+$myPadding: 50px;
+
+.TextStyle  {
+    padding: $myPadding;
+    background-color: $backColor;
+    color: $stringColor;
+}

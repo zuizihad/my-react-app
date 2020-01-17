@@ -15,6 +15,7 @@ const myRouting = (
         <div>
         <nav>
         <div className="nav-wrapper">
+        <a className="brand-logo">Logo</a>
         <ul className="right hide-on-med-and-down">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About</Link></li>
