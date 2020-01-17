@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Country from './components/Country'
 import './mySass.scss'
 import '../node_modules/materialize-css/dist/css/materialize.min.css'
 
@@ -18,6 +19,7 @@ function App() {
     <div className="App">
       <h1 style={textStyle}>Home</h1>
       <h1 className="TextStyle">sass</h1>
+     
     </div>
   );
 }

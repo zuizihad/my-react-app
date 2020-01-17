@@ -8,6 +8,7 @@ import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
 import {Route, Link, BrowserRouter as Router} from '../node_modules/react-router-dom'
 import * as serviceWorker from './serviceWorker';
+import Country from './components/Country';
 
 const myRouting = (
    <Router>
@@ -21,6 +22,7 @@ const myRouting = (
             <li><Link to="/about">About</Link></li>
             <li><Link to="/contact">Contact</Link></li>
             <li><Link to="/portfolio">Portfolio</Link></li>
+            <li><Link to="/country">Country</Link></li>
         </ul>
         </div>
         </nav>
@@ -28,6 +30,7 @@ const myRouting = (
         <Route path="/about" component={About}/>
         <Route path="/contact" component={Contact}/>
         <Route path="/portfolio" component={Portfolio}/>
+        <Route path="/country" component={Country}/>
 
     </div>
    
