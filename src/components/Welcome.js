@@ -1,5 +1,4 @@
 import  React from 'react'
-import '../../node_modules/materialize-css/dist/css/materialize.min.css'
 function Welcome(props){
 
 function DoThis(){
@@ -9,11 +8,21 @@ const DoIt = (msg) => alert(msg+ " you did it")
 
     return (
         <div>
-            <button className="waves-effect waves-light btn" onClick = {DoIt.bind(this, "congratulations")}>click me</button>
-            <h1>name: {props.name} and age: {props.age}</h1>
+              <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a>
+            <select>
+                <option>dhaka</option>
+                <option>khulna</option>
+                <option>ctg</option>
+            </select>
+            
+            <ul className="dropdown-content">
+                <li>dhaka</li>
+                <li>ctg</li>
+            </ul>
         </div>
 
     )
+    
 }
 
 export default Welcome

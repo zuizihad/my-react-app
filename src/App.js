@@ -1,14 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Welcome from './components/Welcome';
-import FormClass from './components/FormClass';
-import Form from './components/Form'
+import '../node_modules/materialize-css/dist/css/materialize.min.css'
+
 
 function App() {
   return (
     <div className="App">
-      <Form></Form>
+      <h1>Home</h1>
     </div>
   );
 }

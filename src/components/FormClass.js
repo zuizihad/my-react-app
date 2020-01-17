@@ -1,40 +1,25 @@
 import React, {Component} from 'react'
+import M from 'materialize-css';  
 
 class FormClass extends Component {
 
-    constructor(){
-        super()
-        this.refreshNow = this.refreshNow.bind(this)
-        this.state ={
-            name: 'zihad',
-            age: '22',
-            job: 'student',
-            email: {
-                firstEmail: 'ahmedxihad@gmail.com',
-                secondEmail: 'zihad@gmail.com',
-                thirdEmail: [1,2,3,4,5,6,7,8,9]
-            }
-        }
+    componentDidMount() {
+        let elems = document.querySelectorAll('.dropdown-trigger');
+        M.Dropdown.init(elems, {inDuration: 300, outDuration: 225});
     }
-
-    refreshNow(){
-        this.forceUpdate()
-    }
-
-    changeName(a){
-        this.setState({name:a})
-    }
-     doNow =()=> alert("now")
 
     render() {
         return(
-        <div>
-            <h1>{Math.random()}</h1>
-            <button onClick = {this.refreshNow}>refresh now</button><br/><br/>
-            <button onClick ={this.changeName.bind(this, "zihadul islam")} >change name</button>
-            <h1>from {this.props.name}</h1>
-        <h1>my name is {this.state.name} and i am {this.state.age}
-         years old.My Email is: {this.state.email.thirdEmail[3]}</h1>
+            <div className="input-field col s12">
+            <a className='dropdown-button btn' data-activates='dropdown1'>Drop Me!</a>
+            <ul id='dropdown1' className='dropdown-content'>
+              <li><a href="#!">one</a></li>
+              <li><a href="#!">two</a></li>
+              <li className="divider"></li>
+              <li><a href="#!">three</a></li>
+              <li><a href="#!"><i className="material-icons">view_module</i>four</a></li>
+             <li><a href="#!"><i className="material-icons">cloud</i>five</a></li>
+            </ul>
         </div>
         ) 
     }
